@@ -1,0 +1,53 @@
+ body{
+	background-color:#ECECEC;
+	border-top:solid 5px black;
+	font-family: sans-serif;
+	margin:30px;
+	padding:40px 90px;
+
+}
+p{
+	font-size:27px;
+	font-family:serif;
+	text-align: justify;
+	width:1120px;
+}
+h1{
+	padding-left:450px;
+}
+h3{
+	padding:3px;
+}
+ul{
+	font-size:19px;
+	font-family: sans-serif;
+	list-style-type: square;	
+}
+footer{
+
+	margin-top: -100px;
+	margin-bottom:20px;
+}
+nav{
+	text-align: center;
+	font-size:19px;
+	font-weight: bold;
+	font-style: italic;
+	font-family: sans-serif;
+}
+.experience{
+margin-left:40px;
+font-family:serif;
+text-align: justify;
+width:1000px;
+
+}
+a{
+	color:black;
+}
+img{
+	
+	border:solid black 1px;
+	padding:3px;
+	margin-left:70px;
+}

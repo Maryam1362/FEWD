@@ -1,0 +1,17 @@
+body{
+	background-color: #ffdf1b;
+	border-style:solid;
+	border-color:black;
+	border-width: 3px;
+	padding:5px;
+}
+h3{
+	color:#887;
+}
+a{
+	color:#900;
+}
+img{
+	border:solid 3px black;
+	margin-left:10px;
+}
