@@ -67,7 +67,7 @@ body {
 header {
 height:430px;
 width:100%;
-background: url(../images/header_bg.jpg) no-repeat center top rgb(134,141,157);
+background: url(../images/headerBg.jpg) no-repeat center top rgb(134,141,157);
 background-size: cover;
 font-family: 'Open Sans', sans-serif;
 }
@@ -107,14 +107,16 @@ section span{
 }
 section p{
   font-size:13px;
-  font-weight: light;
+  font-weight:300 ;
   margin-bottom:20px;
   margin-top: 20px;
-  /*line-height:15px;*/
+}
+em{
+  font-style:italic;
 }
 section ul{
   font-size:13px;
-  font-weight: light;
+  font-weight:300 ;
   list-style-type: circle;
   padding-left:50px;
 }
@@ -125,7 +127,7 @@ footer{
 footer li{
  display: inline;
  padding-left:20px;
- padding-right: 20px;
+ padding-right: -10px;
 }
 
 footer ul{
@@ -136,17 +138,17 @@ footer p{
   font-size: 9px;
   color:white;
   font-weight:600;
-  text-align: center;
   padding-top:40px;
+  text-align: center;
 }
 
 /******************************************
 /* Additional Styles
 /*******************************************/
 .middlePage{
-background: url(../images/testimonial_bg.jpg) no-repeat bottom center;
+background: url(../images/testimonialBg.jpg) no-repeat bottom center;
 background-size: cover;
-padding-left:650px;
+padding-left:590px;
 color:white;
 font-size:18px;
 
@@ -157,7 +159,7 @@ font-size:18px;
   text-align:center;
 }
 .middlePage span{
-  padding-left:130px;
+  padding-left:50px;
   font-size:18px;
   font-weight:600;
 }
@@ -179,5 +181,5 @@ font-size:18px;
   font-size: 24px;
   font-weight:800;
   color:yellow;
-  padding-left:860px;
+  padding-left:650px;
 }
