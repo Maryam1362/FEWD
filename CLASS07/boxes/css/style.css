@@ -1,0 +1,169 @@
+/*
+Project Name: Blank Template
+Client: Your Client
+Author: Your Name
+Developer @GA in NYC
+*/
+
+
+/******************************************
+/* SETUP
+/*******************************************/
+
+/* Box Model Hack */
+* {
+     -moz-box-sizing: border-box; /* Firexfox */
+     -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+     box-sizing: border-box; /* IE */
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+  clear: both;
+}
+
+.alignright {
+  float: right;
+  padding: 0 0 10px 10px; /* note the padding around a right floated image */
+}
+
+.alignleft {
+  float: left;
+  padding: 0 10px 10px 0; /* note the padding around a left floated image */
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+     color: #000;
+     font-size: 12px;
+     line-height: 1.4;
+     font-family: Helvetica, Arial, sans-serif;
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+/* Center the container */
+#container {
+  max-width: 90%;
+  margin: auto;
+}
+
+header {
+ background-color: #F9c1AC;
+ padding:2%;
+}
+header .mobile-nav{
+  display:none;
+}
+
+header a{
+  background-color:#FC6873;
+  height:40px;
+  padding:2%;
+  display:block;
+}
+header li{
+  float:left;
+  width:15%;
+  margin-right:1%;
+}
+
+.hero{
+  width:100%;
+  background-color: green;
+  margin-top:4px;
+  height: 250px;
+}
+.tout{
+  background-color: blue;
+  width:24%;
+  margin-right:1%;
+  height: 150px;
+  float:left;
+}
+.touts{
+margin:1% 0;
+}
+.new-class{
+  
+  padding:2%;
+  border:3px solid black;
+
+}
+.tout:last-child{
+  margin-right:0;
+}
+footer {
+background-color: #DDC2FA;
+padding:2%;
+}
+.promo{
+  background:#9944FB;
+  width:32%;
+  height:150px;
+  float:left;
+  margin-right:1.3%;
+}
+.poromo:last-child{
+  margin-right: 0;
+}
+
+/******************************************
+/* Mobile STYLES
+/*******************************************/
+  @media only screen and (max-width: 740px){
+
+ header ul{
+  display:none;
+ }
+ header .btn{
+  float:right;
+  width:10%;
+  background:#FC6873;
+  text-transform:uppercase;
+  padding:2%;
+  text-align: center;
+  display:block;
+
+ }
+ .tout{
+  float:none;
+  width:100%;
+  margin-bottom:1%;
+ }
+ .tout:last-child{
+  display:none;
+ }
+
+ .promo{
+  float:none;
+  width:100%;
+  margin-bottom:1%;
+ }
+
+}
+ @media screen and (max-width:480px){
+  .tout{
+    display:none;
+  }
+  .tout:first-child{
+    display:block;
+  }
+ }
+
+
