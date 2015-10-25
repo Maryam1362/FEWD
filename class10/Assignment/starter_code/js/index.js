@@ -1,15 +1,12 @@
 
 $(document).ready(function(){
- //code goes here
- $('.readmore').click(showText); 
- $('.readless').click(hideText);
- $('.learnmore').click(slideText);
-//Show the text using show() or SlideDown();
- function showText(){
- 	$('#show-this-on-click').slideDown();
- 	$('.readless').show();
- 	$('.readmore').hide();
- 	//$('.hide').slideDown();
+ 	$('.readmore').click(showText); 
+ 	$('.readless').click(hideText);
+ 	$('.learnmore').click(slideText);
+ 	function showText(){
+ 		$('#show-this-on-click').slideDown();
+ 		$('.readless').show();
+ 		$('.readmore').hide();
  	}
  	function hideText(){
  		$('#show-this-on-click').slideUp();
@@ -19,11 +16,6 @@ $(document).ready(function(){
  	function slideText(){
  		$('#learnmoretext').slideDown();
  		$('.learnmore').hide();
- 	}
- 
-
-
-
- 	
+ 	}	
 });
 
