@@ -48,20 +48,128 @@ Author: Maryam Sarabian
   margin: 0 auto;
   width: 100%; }
 
-header {
-  background: #3F739E; }
+.mainHeader {
+  background: #3F739E;
+  padding: 0.8%;
+  color: white; }
+  .mainHeader h1 {
+    font-family: "Lobster", cursive;
+    font-size: 50px;
+    text-align: center;
+    width: 33.3%;
+    float: left; }
+  .mainHeader .hamburger:before {
+    content: '\2630';
+    cursor: pointer;
+    font-size: 25px;
+    margin-top: -2%;
+    width: 20px;
+    padding-right: 4%; }
+  .mainHeader .menu {
+    width: 33.3%;
+    float: left;
+    padding-left: 4%;
+    margin-top: 1%; }
+  .mainHeader a {
+    color: white;
+    text-decoration: none; }
+  .mainHeader .Menu1 {
+    margin-left: 20px; }
+  .mainHeader .Login {
+    text-align: right;
+    width: 33.3%;
+    float: left;
+    margin-top: 20px; }
+  .mainHeader li {
+    display: inline;
+    padding-right: 20px; }
+  .mainHeader button {
+    background-color: black;
+    border: solid 1px blue; }
 
-.Logo {
-  font-family: "Lobster", cursive;
-  font-size: 50px;
+.LogInPage {
+  background: black;
   color: white;
-  text-align: center; }
+  padding: 0.8%; }
+  .LogInPage h1 {
+    font-family: "Lobster", cursive;
+    font-size: 50px;
+    text-align: center;
+    padding-bottom: 5%;
+    margin: 0 auto;
+    width: 33.3%;
+    border-bottom: 1px solid white; }
+  .LogInPage h2 {
+    width: 100%;
+    text-align: center;
+    line-height: 0.1em;
+    margin: 0 auto; }
+  .LogInPage h2 span {
+    padding: 0 10px;
+    background: black; }
+  .LogInPage .boxes {
+    margin: 40px auto 0 auto;
+    width: 33.3%; }
+  .LogInPage #checkbox-rememberme {
+    width: 22px;
+    height: 23px;
+    color: blue; }
+  .LogInPage button {
+    display: block;
+    width: 100%;
+    margin: 50px 0;
+    height: 40px;
+    border-radius: 6px;
+    background: #3F739E;
+    color: white; }
+  .LogInPage a {
+    text-decoration: none;
+    color: white; }
+  .LogInPage .SignIn {
+    padding-left: 36%;
+    color: #3F739E; }
+  .LogInPage .forgetPass {
+    padding-bottom: 24px;
+    border-bottom: 1px white solid; }
 
-.hamburger-icon:before {
-  content: '\2630';
-  float: left;
-  color: white;
-  cursor: pointer;
-  font-size: 30px; }
+#email {
+  width: 100%;
+  height: 40px;
+  margin: 10px auto 40px auto;
+  border-radius: 6px; }
+
+#passWord {
+  width: 100%;
+  height: 40px;
+  margin: 10px auto 40px auto;
+  border-radius: 6px; }
+
+.checkBox label {
+  display: block;
+  width: 30%;
+  padding: 10px;
+  margin-top: -8%;
+  margin-left: 10%; }
+
+.newAccount {
+  margin: 0 auto; }
+  .newAccount p {
+    margin-top: 30px;
+    margin-left: 50px; }
+  .newAccount a {
+    text-decoration: none;
+    display: block;
+    width: 150px;
+    margin-top: -15px;
+    float: right;
+    margin-right: -30px; }
+
+a:hover {
+  text-decoration: underline; }
+
+.halfPage {
+  height: 400px;
+  background: url(../IMAGE/IMG1.jpg) center center no-repeat;
+  background-size: cover; }
 
 /*# sourceMappingURL=style.css.map */

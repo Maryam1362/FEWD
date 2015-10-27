@@ -57,26 +57,166 @@ a {
 /* Center the container */
 $font: 'Lobster', cursive;
 $BColor:#3F739E;
+$WColor:white;
+
 
 .container{
 	margin:0 auto;
 	width:100%;
 	}
 
-	header{
+	.mainHeader{
 	  background:#3F739E;
-	  }
-	.Logo{
-	 	font-family:$font;
-	 	font-size:50px;
-	 	color:white;
-	 	text-align:center;
-		}
-	.hamburger-icon:before { 
+    padding:0.8%;
+    color:$WColor;
+
+	h1{
+    font-family:$font;
+    font-size:50px;
+    text-align:center;
+    width:33.3%;
+    float:left;
+  }
+    
+	.hamburger:before { 
     	content:'\2630';
-    	float:left;
-    	color: white;
     	cursor: pointer;
-    	font-size:30px;
-  		   } 
+    	font-size:25px;
+      margin-top:-2%;
+      width:20px;
+      padding-right:4%;
+  }
+  .menu{
+    width:33.3%;
+    float:left;
+    padding-left:4%;
+    margin-top:1%;
+  }
+  a{
+  color:$WColor;
+  text-decoration:none;
+  }
+  .Menu1{
+  margin-left:20px;
+  }
+  .Login{
+  text-align:right;
+  width:33.3%;
+  float:left;
+  margin-top:20px;
+  }
+  li{
+  display:inline;
+  padding-right:20px;
+  }
+  button{
+  background-color:black;
+  border:solid 1px blue;
+  }
+} 
+.LogInPage{
+    background:black;
+    color:$WColor;
+    padding:0.8%;
+      h1{
+        font-family:$font;
+        font-size:50px;
+        text-align:center;
+        padding-bottom:5%;
+        margin:0 auto;
+        width:33.3%;
+        border-bottom: 1px solid white;
+      }
+      h2 {
+        width: 100%; 
+        text-align: center; 
+        line-height: 0.1em; 
+        margin: 0 auto;   
+      } 
+      h2 span { 
+          padding:0 10px; 
+          background:black;
+      }
+      .boxes{
+        margin:40px auto 0 auto;
+        width:33.3%;
+      }
+      
+      #checkbox-rememberme{
+        width:22px;
+        height:23px;
+        color:blue;
+      }
+      button{
+      display:block;
+        width:100%;
+       margin:50px 0;
+       height:40px;
+       border-radius:6px;
+       background:$BColor;
+       color:white;
+      }
+      a{
+      text-decoration:none;
+      color:white;
+      }
+      .SignIn{
+      padding-left:36%;
+      color:$BColor;
+      }
+      .forgetPass{
+      padding-bottom:24px;
+      border-bottom:1px white solid;
+      }
+}      
+    #email{
+    width:100%;
+    height:40px;
+    margin:10px auto 40px auto;
+    border-radius:6px;
+  }
+#passWord{
+    width:100%;
+    height:40px;
+    margin:10px auto 40px auto;
+    border-radius:6px;
+  }
+.checkBox{
+  label{
+   display:block;
+   width:30%;
+   padding:10px;
+   margin-top:-8%;
+   margin-left:10%;
+  }
+}  
+.newAccount{
+ margin:0 auto;
+ p{
+ margin-top:30px;
+ margin-left:50px;
+ }
+
+  a{
+  text-decoration:none;
+  display:block;
+  width:150px;
+  margin-top:-15px;
+  float:right;
+  margin-right:-30px;
+
+  }
+}
+a:hover{
+  text-decoration:underline;
+}
+
+.halfPage{
+  height:400px;
+  background: url(../IMAGE/IMG1.jpg) center center no-repeat;
+  background-size: cover;
+  
+
+}
+
 	
