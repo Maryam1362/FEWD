@@ -1,0 +1,99 @@
+/* 
+ * 	Core Owl Carousel CSS File
+ *	v1.3.3
+ */
+
+/* clearfix */
+.owl-carousel .owl-wrapper:after {
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
+}
+/* display none until init */
+.owl-carousel{
+	display: none;
+	position: relative;
+	width: 100%;
+	-ms-touch-action: pan-y;
+}
+.owl-carousel .owl-wrapper{
+	display: none;
+	position: relative;
+	-webkit-transform: translate3d(0px, 0px, 0px);
+}
+.owl-carousel .owl-wrapper-outer{
+	overflow: hidden;
+	position: relative;
+	width: 100%;
+}
+.owl-carousel .owl-wrapper-outer.autoHeight{
+	-webkit-transition: height 500ms ease-in-out;
+	-moz-transition: height 500ms ease-in-out;
+	-ms-transition: height 500ms ease-in-out;
+	-o-transition: height 500ms ease-in-out;
+	transition: height 500ms ease-in-out;
+}
+	
+.owl-carousel .owl-item{
+	float: left;
+}
+.owl-controls .owl-page,
+.owl-controls .owl-buttons div{
+	cursor: pointer;
+}
+.owl-controls {
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+/* mouse grab icon */
+.grabbing { 
+    cursor:url(grabbing.png) 8 8, move;
+}
+
+/* fix */
+.owl-carousel  .owl-wrapper,
+.owl-carousel  .owl-item{
+	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility:    hidden;
+	-ms-backface-visibility:     hidden;
+  -webkit-transform: translate3d(0,0,0);
+  -moz-transform: translate3d(0,0,0);
+  -ms-transform: translate3d(0,0,0);
+}
+
+
+.nav-arrow--left {
+    left: 1.2%;
+    transform: scaleX(-1);
+}
+.nav-arrow--hidden {
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-name: arrow-fade-out;
+    cursor: pointer;
+    pointer-events: none;
+}
+.nav-arrow {
+    display: block;
+    height: 50px;
+    margin-top: -25px;
+    width: 25px;
+}
+.nav-arrow {
+    background: rgba(0, 0, 0, 0) url("data:image/svg+xml,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22utf-8%22%3F%3E%0D%0A%3C%21--%20Generator%3A%20Adobe%20Illustrator%2018.1.0%2C%20SVG%20Export%20Plug-In%20.%20SVG%20Version%3A%206.00%20Build%200%29%20%20--%3E%0D%0A%3Csvg%20version%3D%221.1%22%20id%3D%22Layer_1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%0D%0A%09%20viewBox%3D%22399%201.7%2019%2036.5%22%20enable-background%3D%22new%20399%201.7%2019%2036.5%22%20xml%3Aspace%3D%22preserve%22%3E%0D%0A%3Cpath%20fill%3D%22%23FFFFFF%22%20d%3D%22M399.8%2C38.3c-0.2%2C0-0.4-0.1-0.6-0.2c-0.3-0.3-0.3-0.8%2C0-1.1L416.1%2C20L399.2%2C3.1c-0.3-0.3-0.3-0.8%2C0-1.2%0D%0A%09c0.3-0.3%2C0.8-0.3%2C1.1%2C0l17.4%2C17.4c0.3%2C0.3%2C0.3%2C0.8%2C0%2C1.1l-17.4%2C17.5C400.2%2C38.2%2C400%2C38.3%2C399.8%2C38.3z%22%2F%3E%0D%0A%3C%2Fsvg%3E%0D%0A") no-repeat scroll 0 0;
+    cursor: pointer;
+    height: 50px;
+    opacity: 0.65;
+    position: absolute;
+    top: 50%;
+    width: 25px;
+    z-index: 100;
+}

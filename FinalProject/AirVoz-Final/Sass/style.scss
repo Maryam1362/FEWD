@@ -1,0 +1,489 @@
+/*
+Project Name: AirVoz
+Client: GPMEC
+Author: Maryam Sarabian
+*/
+
+/******************************************
+/* SETUP
+/*******************************************/
+
+/* Box Model Hack */
+* {
+    -moz-box-sizing: border-box;
+
+    /* Firexfox */
+    -webkit-box-sizing: border-box;
+
+    /* Safari/Chrome/iOS/Android */
+    box-sizing: border-box;
+
+    /* IE */
+}
+
+/* Clear fix hack */
+.clearfix:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}
+
+.clear {
+    clear: both;
+}
+
+.alignright {
+    float: right;
+    padding: 0 0 10px 10px;
+
+    /* note the padding around a right floated image */
+}
+
+.alignleft {
+    float: left;
+    padding: 0 10px 10px 0;
+
+    /* note the padding around a left floated image */
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {}
+
+a {}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+/* Center the container */
+$font: "Lobster", cursive;
+$BColor: #3F739E;
+$WColor: white;
+
+.container {
+    margin: 0 auto;
+    width: 100%;
+}
+
+.mainHeader {
+    background: #3F739E;
+    padding: 0.8%;
+    color: $WColor;
+
+    h1 {
+        font-family: $font;
+        font-size: 50px;
+        text-align: center;
+        width: 33.3%;
+        float: left;
+    }
+
+    .hamburger:before {
+        content: '\2630';
+        cursor: pointer;
+        font-size: 25px;
+        margin-top: -2%;
+        width: 20px;
+        padding-right: 4%;
+    }
+
+    .menu {
+        width: 33.3%;
+        float: left;
+        padding-left: 4%;
+        margin-top: 1%;
+    }
+
+    a {
+        color: $WColor;
+        text-decoration: none;
+    }
+
+    .Menu1 {
+        margin-left: 20px;
+    }
+
+    .Login {
+        text-align: right;
+        width: 33.3%;
+        float: left;
+        margin-top: 20px;
+    }
+
+    li {
+        display: inline;
+        padding-right: 20px;
+    }
+
+    button {
+        background-color: black;
+        border: solid 1px blue;
+    }
+}
+
+.LogInPage {
+    background: black;
+    color: $WColor;
+    padding: 0.8%;
+
+    h1 {
+        font-family: $font;
+        font-size: 50px;
+        text-align: center;
+        padding-bottom: 5%;
+        margin: 0 auto;
+        width: 33.3%;
+        border-bottom: 1px solid white;
+    }
+
+    h2 {
+        width: 100%;
+        text-align: center;
+        line-height: 0.1em;
+        margin: 0 auto;
+    }
+
+    h2 span {
+        padding: 0 10px;
+        background: black;
+    }
+
+    .boxes {
+        margin: 40px auto 0 auto;
+        width: 33.3%;
+    }
+
+    #checkbox-rememberme {
+        width: 22px;
+        height: 23px;
+        color: blue;
+    }
+
+    button {
+        display: block;
+        width: 100%;
+        margin: 50px 0;
+              height: 40px;
+        border-radius: 6px;
+        background: $BColor;
+        color: white;
+    }
+
+    a {
+        text-decoration: none;
+        color: white;
+    }
+
+    .SignIn {
+        padding-left: 36%;
+        color: $BColor;
+    }
+
+    .forgetPass {
+        padding-bottom: 24px;
+        border-bottom: 1px white solid;
+    }
+}
+
+#email {
+    width: 100%;
+    height: 40px;
+    margin: 10px auto 40px auto;
+    border-radius: 6px;
+}
+
+#passWord {
+    width: 100%;
+    height: 40px;
+    margin: 10px auto 40px auto;
+    border-radius: 6px;
+}
+
+.checkBox {
+    label {
+        display: block;
+        width: 30%;
+        padding: 10px;
+        margin-top: -8%;
+        margin-left: 10%;
+    }
+}
+
+.newAccount {
+    margin: 0 auto;
+
+    p {
+        margin-top: 30px;
+        margin-left: 50px;
+    }
+
+    a {
+        text-decoration: none;
+        display: block;
+        width: 150px;
+        margin-top: -15px;
+        float: right;
+        margin-right: -30px;
+    }
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/*.halfPage{
+  height:400px;
+  background: url(../IMAGE/IMG1.jpg) center center no-repeat;
+  background-size: cover;
+}*/
+
+#owl-demo {
+    .item {
+        background-size: cover;
+        width: 100%;
+        padding: 13rem 0;
+        height:550px;
+        .info {
+             width:50%;
+             font-family: sans-serif;
+             padding-left:80px;
+             color: #f1f1f1;
+             line-height: 1.7;
+            text-align:left;
+            
+
+            h2 {
+                font-size: 30px;
+            }
+            p {
+                
+                font-size: 22px;
+                //font-weight: bold;
+                
+            }
+            button {
+                background:$BColor ;
+                margin-top:20px;
+                display:block;
+                padding:12px;
+                width:50%;
+                color:white;
+                
+            }
+        }
+        // img {
+        //     display: block;
+        //     width: 100%;
+        //     height: 600px;
+        // }
+    }
+}
+
+.owl-buttons {
+    margin-top: -330px;
+    display: block;
+    animation-name: arrow-fade-out;
+    cursor: pointer;
+    font-size: 20px;
+    clear:both;
+
+    .owl-prev {
+        float: left;
+    }
+
+    .owl-next {
+        float: right;
+    }
+}
+
+.owl-buttons {
+    div {
+        color: blue;
+        zoom: 6;
+        padding: 3px 10px;
+        font-size: 52px;
+        opacity: 0.5;
+    }
+}
+
+.owl-theme .owl-controls .owl-buttons div {
+    color: white;
+    zoom: 1;
+    padding: 13px;
+    font-size: 22px;
+    opacity: 0.5;
+    width: 40px;
+    height: 50px;
+}
+
+
+// Border effect with :after pseudo element
+// header.mainHeader:after {
+//     content: "";
+//     position: absolute;
+//     z-index: 1000;
+//     border-left: 100vw solid #3F739E;
+//     top: 70px;
+//     border-bottom: 40px solid transparent;
+//     left: 0;
+// }
+
+@media screen and (max-width:640px){
+    body, p, h2{
+        font-size:14px;
+    }
+    .Login{
+            display:none;
+        }
+.mainHeader{
+   h1{
+    font-size:25px;
+}
+}
+   
+
+
+#owl-demo {
+    .item {
+        background-size: cover;
+        width: 100%;
+        padding: 13rem 0;
+        height:550px;
+        .info {
+             width:100%;
+             padding-left:0;
+             line-height: 1.3;
+            text-align:center;
+             
+             h2,p{
+                font-size: 18px;
+                font-weight:none;
+             }
+
+            }
+            button {
+                margin-top:20px;
+                padding:10px;
+                width:50%;
+                margin:0 auto;
+                
+            }
+        }
+    }
+      
+    .owl-theme{
+     .owl-controls{
+        .owl-buttons{
+         div {
+    display: none;
+}
+
+}}
+}
+  
+    }
+
+    .features {
+        
+        margin-top:350px;
+        moz-margin-start: 300px;
+        clear:both;
+        width:100%;
+        text-align: center;
+
+
+        h1{
+            color:$WColor;
+            background:black;
+            width:100px;
+            margin: 0 auto;
+        }
+    }
+    
+    
+   
+    .featuresCircle2, .featuresCircle4 {
+        background:#F2F2F2;
+        width: 250px;
+        height: 200px;
+        float:right; 
+        margin-top:20px;  
+        margin-right:200px;
+        background: url(..IMAGE\item3.jpg);
+        overflow: hidden;
+        border: 1px solid #000;
+        box-shadow: 0px 0px 15px 0px #666,
+                  0px 5px 15px 0px #000;
+    }
+
+
+    .featuresCircle1, .featuresCircle3{
+    width: 250px;
+    height: 200px;
+    float:left; 
+    clear:both;
+    margin-top:20px; 
+    margin-left:200px;
+    background: url(..IMAGE\IMG2.jpg);
+    overflow: hidden;
+    border: 1px solid #000;
+    box-shadow: 0px 0px 15px 0px #666,
+                  0px 5px 15px 0px #000;
+}
+.cover{
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.45);
+  position: relative;
+  -webkit-transition: all 0.4s cubic-bezier(.99,.99,0,.61);
+  padding: 1em;
+  color: #fff;
+  overflow: hidden;
+  text-shadow: 1px 1px 0px #000;
+}
+.cover {
+    .title{
+  font-size: 16px;
+  font-style: italic;
+}
+}
+.box {
+    .cover{
+      .intro{
+  line-height: 1.2em;
+  height: 4.8em;
+  width: 100%;
+  position: relative;
+  font-size: 10pt;
+  overflow: hidden;
+        }
+    }
+}
+
+.box:hover .top{
+  -webkit-transition: all 0.4s cubic-bezier(.99,.99,0,.61);
+   top: 0px;
+}
+
+.top{
+  top: 0px;
+}
+
+    /*.featureshidden1{
+        background-image:url("left.jpeg");
+        background-size:cover;
+        width:340px;
+        height: 340px;
+        border-radius:170px;
+        float:left; 
+        clear:both;
+        margin-top:20px; 
+        margin-left:200px;
+
+    }*/
