@@ -75,6 +75,9 @@ $WColor: white;
     background: #3F739E;
     padding: 0.8%;
     color: $WColor;
+    position: fixed;
+    width:100%;
+    z-index: 1;
 
     h1 {
         font-family: $font;
@@ -407,34 +410,19 @@ a:hover {
     }
     
     
-   
-    .featuresCircle2, .featuresCircle4 {
-        background:#F2F2F2;
-        width: 250px;
-        height: 200px;
-        float:right; 
-        margin-top:20px;  
-        margin-right:200px;
-        background: url(..IMAGE\item3.jpg);
-        overflow: hidden;
-        border: 1px solid #000;
-        box-shadow: 0px 0px 15px 0px #666,
-                  0px 5px 15px 0px #000;
+  .box{
+  width: 400px;
+  height: 350px;
+  
+  overflow: hidden;
+  border: 1px solid #000;
+  box-shadow: 0px 0px 15px 0px #666,
+              0px 5px 15px 0px #000;
+  img{
+    width: 400px;
+  height: 400px;
+
     }
-
-
-    .featuresCircle1, .featuresCircle3{
-    width: 250px;
-    height: 200px;
-    float:left; 
-    clear:both;
-    margin-top:20px; 
-    margin-left:200px;
-    background: url(..IMAGE\IMG2.jpg);
-    overflow: hidden;
-    border: 1px solid #000;
-    box-shadow: 0px 0px 15px 0px #666,
-                  0px 5px 15px 0px #000;
 }
 .cover{
   width: 100%;
@@ -447,33 +435,52 @@ a:hover {
   overflow: hidden;
   text-shadow: 1px 1px 0px #000;
 }
-.cover {
-    .title{
-  font-size: 16px;
+.title{
+  font-size: 20px;
   font-style: italic;
-}
-}
-.box {
-    .cover{
-      .intro{
-  line-height: 1.2em;
-  height: 4.8em;
-  width: 100%;
-  position: relative;
-  font-size: 10pt;
-  overflow: hidden;
-        }
-    }
+  padding-top:130px;
+  text-align :center;
+  font-family: sans-serif;
 }
 
+
 .box:hover .top{
-  -webkit-transition: all 0.4s cubic-bezier(.99,.99,0,.61);
+  -webkit-transition: all 0.7s cubic-bezier(.99,.99,0,.61);
    top: 0px;
 }
 
 .top{
-  top: 0px;
+  top: -403px;
 }
+
+.floatLeft1{
+  float:left;
+  clear:both;
+  margin-left:200px;
+  margin-top:50px;
+}
+.floatLeft2{
+  float:left;
+  clear:both; 
+  margin-left:200px;
+  margin-top:50px;
+
+}
+.floatRight1{
+  float:right;
+   margin-right:200px;
+  margin-top:50px;
+  
+}
+.floatRight2{
+  float:right;
+  margin-right:200px;
+  margin-top:50px;
+  
+}
+
+
+
 
     /*.featureshidden1{
         background-image:url("left.jpeg");
@@ -485,5 +492,98 @@ a:hover {
         clear:both;
         margin-top:20px; 
         margin-left:200px;
+*/
+    
+    //html,body { position: relative; left: 0;}
+   
 
-    }*/
+
+/*          navigator           */
+
+#navigator{
+    width: 250px;
+    height:100%;
+    position: fixed;
+    top: 0;
+    left: -250px;
+   background: rgba(52, 152, 219,0.7);
+    float: left;
+    z-index: 10;
+}
+#nav{
+    width: 250px;
+    height: auto;
+    display: block;
+    margin: 0 ;
+    padding: 0;
+}
+.nav_tab{
+    width: 250px;
+    height: 50px;
+    display: block;
+}
+.nav_tab a p{
+    color: rgba(255,255,255,0.8);
+    font-size: 18px;
+    padding: 15px 0;
+    text-align: center;
+    transition:0.35s ease;
+    -webkit-transition:0.35s ease;
+    -moz-transition:0.35s ease;
+}
+.nav_tab a p:hover{
+    background: rgba(255,255,255,0.9);
+    color: rgba(0,0,0,1);   
+    letter-spacing: 2px;
+    transition:0.35s ease;
+    -webkit-transition:0.35s ease;
+    -moz-transition:0.35s ease;
+    }
+.menu-icon{
+    width: 150px;
+    height: 35px;
+    position: fixed;
+    top: 0;
+    left: 0px;
+    margin: 10px;
+    z-index: 10;
+}
+.menu-text {
+    width: 50px;
+    height: 35px;
+    font-size: 23px; 
+    color:$WColor;
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 50px;
+    margin-top: 18px;
+    margin-left:10px;
+    z-index: 9;
+}
+
+.menu-icon div {
+  width: 35px;
+  height: 5px;
+  background: $WColor;
+  margin: 4px ;
+  padding-left:30px;
+  transition: all 0.35s;
+  border-radius: 2px;
+}
+.on .line_one {transform: rotate(45deg) translate(7px, 7px);}
+.on .line_two {opacity: 0;}
+.on .line_three {transform: rotate(-45deg) translate(7px, -7px);}
+
+#test{
+    position:relative;
+    padding-left:250px;
+}
+#test2{
+    padding-left:-250px;
+}
+#featuresAfterExpandingMenu{
+
+    float:none;
+    margin:50px auto;
+}
