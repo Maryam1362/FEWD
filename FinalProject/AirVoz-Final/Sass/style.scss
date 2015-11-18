@@ -55,7 +55,9 @@ Author: Maryam Sarabian
 
 body {}
 
-a {}
+a {
+    text-decoration: none;
+}
 
 /******************************************
 /* LAYOUT
@@ -194,19 +196,14 @@ $WColor: white;
     }
 }
 
-#email {
+#email,#passWord,#Username,#datepicker {
     width: 100%;
     height: 40px;
     margin: 10px auto 40px auto;
     border-radius: 6px;
 }
 
-#passWord {
-    width: 100%;
-    height: 40px;
-    margin: 10px auto 40px auto;
-    border-radius: 6px;
-}
+
 
 .checkBox {
     label {
@@ -240,15 +237,16 @@ a:hover {
     text-decoration: underline;
 }
 
-/*.halfPage{
-  height:400px;
-  background: url(../IMAGE/IMG1.jpg) center center no-repeat;
-  background-size: cover;
-}*/
+#owl-demo2{
+    .owl-buttons {
+   display:none;
+}
+}
 
-#owl-demo {
-    .item {
+#owl-demo, #owl-demo2{
+    .item1, .item2, .item3 {
         background-size: cover;
+        //opacity:0.8;
         width: 100%;
         padding: 13rem 0;
         height:550px;
@@ -259,6 +257,9 @@ a:hover {
              color: #f1f1f1;
              line-height: 1.7;
             text-align:left;
+            opacity:1.0;
+            font-style: bold;
+            font-weight: bold;
             
 
             h2 {
@@ -396,6 +397,8 @@ a:hover {
         
         margin-top:350px;
         moz-margin-start: 300px;
+        webkit-margin-start: 300px;
+         margin-start: 300px;
         clear:both;
         width:100%;
         text-align: center;
@@ -405,7 +408,16 @@ a:hover {
             color:$WColor;
             background:black;
             width:100px;
+            height:30px;
             margin: 0 auto;
+            padding:5px;
+        }
+        p{
+        
+            font-size:23px;
+            font-family: sans-serif;
+            text-align:center;
+            margin-top:20px;
         }
     }
     
@@ -430,6 +442,8 @@ a:hover {
   background: rgba(0,0,0,0.45);
   position: relative;
   -webkit-transition: all 0.4s cubic-bezier(.99,.99,0,.61);
+  -moz-transition: all 0.4s cubic-bezier(.99,.99,0,.61);
+  transition: all 0.4s cubic-bezier(.99,.99,0,.61);
   padding: 1em;
   color: #fff;
   overflow: hidden;
@@ -547,6 +561,7 @@ a:hover {
     left: 0px;
     margin: 10px;
     z-index: 10;
+    padding-top:5px;
 }
 .menu-text {
     width: 50px;
@@ -586,4 +601,195 @@ a:hover {
 
     float:none;
     margin:50px auto;
+}
+
+.options{
+    margin-top:50px;
+    margin-bottom:50px;
+    width:100%;
+    div{
+        width:20%;
+        background-color:black;
+        color:$WColor;
+        height: 30px;
+        text-align: center;
+        padding-top:5px;
+        margin:0 auto;
+    }
+}
+
+.faceBook,.instagram,.twitter{
+    img{
+        width:80%;
+        margin-left: 30px;
+        border:2px solid gray;
+        border-radius:20px;
+
+    }
+    float:left;
+    width:33.3%;
+    
+}
+.legal{
+    position:relative;    
+    top:100px;
+    text-align: center;
+    padding-left:40px; 
+    font-family: sans-serif;
+    /*a:active{
+
+     background-color: black;
+     color:white;
+     text-decoration: none;
+    }*/
+    
+    
+    a{
+        text-decoration: none;
+        color:black;
+        width:210px;
+        height: 50px;
+        margin:20px 2px;
+        font-size:20px;
+        background:gray;
+        border:1 px solid gray;
+        display:block;
+        padding:12px;
+        float:left;
+
+    }
+    
+
+    h1{
+        font-size:100px;
+    }
+    h2{
+        text-align:left;
+        font-size: 35px;
+        clear:both;
+    }
+
+    article{
+        padding:20px 0;
+        text-align: left;
+        font-size: 20px;
+        line-height: 30px;
+    }
+    h1,h2{
+            text-transform: uppercase;
+    }
+    ul,ol{
+        text-align:left;
+        font-size: 19px;
+        line-height: 30px;
+        padding-left: 60px;
+        line-height: 20px;
+    }
+        article{
+            line-height: 25px;
+            
+        }
+    
+    ul{
+        list-style-type: disc;
+    }
+    ol{
+        list-style-type:decimal;
+        .lowerRoman{
+      list-style-type: lower-roman;
+      }   
+      .upperAlpha{
+        list-style-type: upper-alpha;
+      }
+    }
+ 
+}
+
+.color{
+     background:#ccddff;
+}
+p{
+    text-align:left;
+    margin-left:20px;
+}
+
+.legalButtons{
+        margin:0 auto;
+        width:700px;
+    }
+
+  
+.legal .selectedLink{
+    background:black;
+    color:white;
+}
+
+.hiddenDiv{
+    display: none;
+    width:1000px;
+    height: 820px; 
+    background-image:url("https://d1a3f4spazzrp4.cloudfront.net/web-fresh/pattern-grid-dark@1x.gif");
+    background-size:cover;
+    background-position: cover;
+    
+    img{
+        width:360px;
+        height: 600px; 
+          float:right;
+          margin-top:10px;
+          margin-right:20px;
+         
+    } 
+    h1{
+        font-size:24px;
+        
+        margin-bottom:20px;
+        margin-top:-100px;
+    }
+    .featureHiddenNote{
+        float:left;
+        width:605px;
+        margin-top:300px;
+        margin-left:15px;
+        font-size:20px;
+        font-family: sans-serif;
+        color:white;
+        text-align:left;
+        line-height: 1.7;
+
+
+    }
+}
+.twitter img, .instagram img, .faceBook img{
+    height: 625px;
+}
+/************************
+SignUp Page Styles
+************************/
+.signUpHeader{
+
+    h1{
+        margin-left:35%;
+
+    }
+
+}
+.signUpTitle{
+    color:$BColor;
+    font-family: sans-serif;
+     position:relative;    
+    top:100px;
+    font-size:30px;
+    text-align:center;
+}
+.signUpimage{
+
+    background-image:url("../IMAGE/sign-up.jpg")left top no-repeat; 
+    height: 235px;
+    width: 212px;
+    margin-left: -55%;
+}
+.SignUpPage{
+    background-color: $WColor;
+    color:black;
 }

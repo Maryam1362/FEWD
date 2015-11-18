@@ -1,4 +1,5 @@
 $(document).ready(function(){
+  console.log("test");
  //code goes here
  /*$('.CHANGE').click(changecolor);
  function changecolor(){
@@ -7,6 +8,7 @@ $(document).ready(function(){
  //$("owl-buttons").click(showtext);
  //$(".featuresCircle1").click(showFeature1);
  $(".fancybox").fancybox();
+ $('.fancybox').fancybox({'scrolling': 'no'});
    $("#owl-demo").owlCarousel({
  
       navigation : true, // Show next and prev buttons
@@ -15,6 +17,24 @@ $(document).ready(function(){
       singleItem:true,
        navigation : true,
         navigationText : ["<",">"],
+        rewindNav : true,
+        scrollPerPage : false,
+ 
+      // "singleItem:true" is a shortcut for:
+      // items : 1, 
+      // itemsDesktop : false,
+      // itemsDesktopSmall : false,
+      // itemsTablet: false,
+      // itemsMobile : false
+ 
+  });
+   $("#owl-demo2").owlCarousel({
+ 
+      navigation : true, // Show next and prev buttons
+      slideSpeed : 300,
+      paginationSpeed : 400,
+      singleItem:true,
+       navigation : true,
         rewindNav : true,
         scrollPerPage : false,
  
@@ -54,6 +74,19 @@ $(document).ready(function(){
   
     $('.menu-icon').click(function () {
               $(this).toggleClass("on"); });
+
+    $(".legal a").click(function(){
+      
+    $(".legal a:visited").css("background","black");
+    $(".legal a:visited").css("color","white");
+    
+
+
+      
+    });   
+    $(function() {
+    $( "#datepicker" ).datepicker();
+  });
 
 });
 

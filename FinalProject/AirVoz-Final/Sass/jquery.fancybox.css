@@ -97,10 +97,14 @@
 	background: url('fancybox_loading.gif') center center no-repeat;
 }
 
-.fancybox-close {
+.fancybox-close:after {
+	content:"x";
+	font-family: sans-serif;
 	position: absolute;
+	font-size:20px;
+	color:black;
 	top: -18px;
-	right: -18px;
+	right: -32px;
 	width: 36px;
 	height: 36px;
 	cursor: pointer;

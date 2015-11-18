@@ -1,22 +1,25 @@
-<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
 
-<link rel="stylesheet" href="Sass/slidebars.min.css" type="text/css" media="screen" />
-
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>jQuery UI Datepicker - Display inline</title>
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+  <!--<script src="//code.jquery.com/jquery-1.10.2.js"></script>-->
+  <script type="text/javascript" src="jquery.js"></script>
+  <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+  <!--<link rel="stylesheet" href="/resources/demos/style.css">-->
+  <script>
+  $(function() {
+    $( "#datepicker" ).datepicker();
+  });
+  </script>
+</head>
 <body>
-<div class="sb-slidebar sb-left">
-<ul>
-<li>
-home</li>
-<li>test</li>
-</ul>
-</div>
-  <!-- Your left Slidebar content. -->
-<div id="sb-site">
-  <h1> This is a test for slidebar</h1>
-  <p> hello world</p>
-</div>
-<script type="text/javascript" src="js/jquery.js"></script>
-<script type="text/javascript" src="js/slidebars.min.js"></script>
-<script type="text/javascript" src="js/index.js"></script>
+ 
+Date: <div id="datepicker"></div>
+ 
+ 
 </body>
+</html>

@@ -1,0 +1,100 @@
+/*Remove inline*/
+/*Gotes to*/
+select{
+     width:150px;
+}
+
+/*Combine multiples*/
+#buttons-wrapper{
+     padding:10px;
+     border:1px solid black;
+     background:orange;
+}
+#buttons-wrapper>form{     /*forms which is the direct child of the #buttons-wrapper*/
+     padding:10px;
+     border:1px solid black;
+}
+/*Goes to*/
+#buttons-wrapper>form, #buttons-wrapper{
+     padding:10px;
+     border:1px solid black;
+}
+
+#buttons-wrapper{
+     background:orange;
+}
+/*Rename classes/ids for readability*/
+#img1{
+     margin-top: 50px;
+}
+/*Goes to*/
+#banner-image{
+     margin-top:50px;
+}
+
+/*Organize CSS*/
+
+/*Global Styles*/
+
+a{
+     color:red;
+}
+a:hover{
+     color:purple;
+}
+
+body{
+     background-image:url(../images/anImage.png);
+}
+
+
+/*header styles*/
+
+header{
+     height:80px;
+}
+
+header>ol{
+     list-style: none;
+}
+
+
+#navigation-wrapper{
+     float:left;
+}
+.list-item{
+     width:200px;
+}
+
+/*layout styles*/
+
+#container>.col{
+     width:50%;
+}
+
+#container>img{
+     border:1px solid red;
+}
+
+/*footer styles*/
+
+footer{
+     text-align: right;
+}
+
+footer>#company-name{
+     font-weight: bold;
+}
+/*Goes to*/
+
+
+
+/*Create classes for large css changes
+$("#container").css({background:"red",fontSize:"12px",color:"purple",boxShadow:"0 0 10px #ccc";})
+*/
+
+/*Goes to*/
+
+
+
+
