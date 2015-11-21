@@ -80,6 +80,7 @@ $WColor: white;
     position: fixed;
     width:100%;
     z-index: 1;
+    opacity:0.9;
 
     h1 {
         font-family: $font;
@@ -196,7 +197,7 @@ $WColor: white;
     }
 }
 
-#email,#passWord,#Username,#datepicker {
+#email,#passWord,#userName,#datepicker {
     width: 100%;
     height: 40px;
     margin: 10px auto 40px auto;
@@ -246,49 +247,59 @@ a:hover {
 #owl-demo, #owl-demo2{
     .item1, .item2, .item3 {
         background-size: cover;
-        //opacity:0.8;
         width: 100%;
-        padding: 13rem 0;
         height:550px;
+
+}
+        .wrapper{
+             padding: 13rem 0;
+             height:550px;
+             width:100%;
+             background:rgba(0, 0, 0, 0.5);
+        }
         .info {
+             float:right;
              width:50%;
              font-family: sans-serif;
-             padding-left:80px;
+             //padding-left:60px;
              color: #f1f1f1;
              line-height: 1.7;
-            text-align:left;
-            opacity:1.0;
-            font-style: bold;
+            //text-align:center;
             font-weight: bold;
+            margin-right:25%;
+            a{
+                color:white;
+            }
             
+  }          
 
             h2 {
                 font-size: 30px;
+                
             }
             p {
                 
                 font-size: 22px;
-                //font-weight: bold;
                 
             }
             button {
                 background:$BColor ;
-                margin-top:20px;
                 display:block;
                 padding:12px;
                 width:50%;
                 color:white;
+                margin:20px auto;
+                font-size:18px;
                 
             }
         }
-        // img {
-        //     display: block;
-        //     width: 100%;
-        //     height: 600px;
-        // }
-    }
-}
+       
+#test {
+  position: relative;
+  padding-left: 250px; }
 
+#test2 {
+  padding-left: -250px; }
 .owl-buttons {
     margin-top: -330px;
     display: block;
@@ -327,16 +338,16 @@ a:hover {
 }
 
 
-// Border effect with :after pseudo element
-// header.mainHeader:after {
-//     content: "";
-//     position: absolute;
-//     z-index: 1000;
-//     border-left: 100vw solid #3F739E;
-//     top: 70px;
-//     border-bottom: 40px solid transparent;
-//     left: 0;
-// }
+ //Border effect with :after pseudo element
+ header.mainHeader:after {
+    content: "";
+    position: absolute;
+    z-index: 1000;
+    border-right: 100vw solid #3F739E;
+ top: 70px;
+ border-bottom: 40px solid transparent;
+  left: 0;
+}
 
 @media screen and (max-width:640px){
     body, p, h2{
@@ -345,94 +356,102 @@ a:hover {
     .Login{
             display:none;
         }
-.mainHeader{
-   h1{
-    font-size:25px;
-}
-}
+    .mainHeader{
+         h1{
+            font-size:25px;
+          }
+    }
    
-
-
-#owl-demo {
-    .item {
-        background-size: cover;
-        width: 100%;
-        padding: 13rem 0;
-        height:550px;
+    #owl-demo {
+        .item {
+            background-size: cover;
+            width: 100%;
+            padding: 13rem 0;
+            height:550px;
         .info {
-             width:100%;
-             padding-left:0;
-             line-height: 1.3;
-            text-align:center;
+            width:100%;
+            padding-left:0;
+            line-height: 1.3;
+            //text-align:center;
              
-             h2,p{
+            h2,p{
                 font-size: 18px;
                 font-weight:none;
+                //text-align: center;
              }
 
-            }
+        }
             button {
-                margin-top:20px;
+               
                 padding:10px;
-                width:50%;
-                margin:0 auto;
+                width:40%;
                 
             }
         }
     }
       
     .owl-theme{
-     .owl-controls{
-        .owl-buttons{
-         div {
-    display: none;
-}
+        .owl-controls{
+            .owl-buttons{
+                div {
+                    display: none;
+                }
 
-}}
-}
-  
+            }
+        }
     }
+  
+}
 
     .features {
         
         margin-top:350px;
+        padding:30px;
         moz-margin-start: 300px;
         webkit-margin-start: 300px;
          margin-start: 300px;
         clear:both;
         width:100%;
         text-align: center;
-
+        background-size:cover;
+        padding-bottom:100px;
+        height: 1200px;
 
         h1{
             color:$WColor;
-            background:black;
-            width:100px;
-            height:30px;
+            background-color: black;
+            border-radius: 10px;
+            font-family: sans-serif;
+            font-size: 20px;
+            height: 40px;
             margin: 0 auto;
-            padding:5px;
+            padding-top: 10px;
+            text-align: center;
+            width: 50%;
+            margin-bottom:10px;
+            margin-top:20px;
         }
-        p{
+        /*p{
         
             font-size:23px;
             font-family: sans-serif;
             text-align:center;
             margin-top:20px;
-        }
+        }*/
     }
     
     
   .box{
   width: 400px;
-  height: 350px;
+  height: 400px;
   
   overflow: hidden;
   border: 1px solid #000;
   box-shadow: 0px 0px 15px 0px #666,
               0px 5px 15px 0px #000;
   img{
-    width: 400px;
-  height: 400px;
+    width: 350px;
+  height: 450px;
 
     }
 }
@@ -447,6 +466,8 @@ a:hover {
   padding: 1em;
   color: #fff;
   overflow: hidden;
+  border-radius:30px;
+  border:2px solid pattern-grid-dark;
   text-shadow: 1px 1px 0px #000;
 }
 .title{
@@ -464,7 +485,7 @@ a:hover {
 }
 
 .top{
-  top: -403px;
+  top: -453px;
 }
 
 .floatLeft1{
@@ -472,24 +493,27 @@ a:hover {
   clear:both;
   margin-left:200px;
   margin-top:50px;
+  border-radius:30px;
 }
 .floatLeft2{
   float:left;
   clear:both; 
   margin-left:200px;
   margin-top:50px;
+  border-radius:30px;
 
 }
 .floatRight1{
   float:right;
    margin-right:200px;
   margin-top:50px;
-  
+  border-radius:30px;
 }
 .floatRight2{
   float:right;
   margin-right:200px;
   margin-top:50px;
+  border-radius:30px;
   
 }
 
@@ -538,7 +562,8 @@ a:hover {
 }
 .nav_tab a p{
     color: rgba(255,255,255,0.8);
-    font-size: 18px;
+    font-size: 22px;
+    text-shadow:1px 1px 5px rgba(0,0,0, 0.9);
     padding: 15px 0;
     text-align: center;
     transition:0.35s ease;
@@ -590,17 +615,15 @@ a:hover {
 .on .line_two {opacity: 0;}
 .on .line_three {transform: rotate(-45deg) translate(7px, -7px);}
 
-#test{
-    position:relative;
-    padding-left:250px;
-}
-#test2{
-    padding-left:-250px;
-}
+
 #featuresAfterExpandingMenu{
 
     float:none;
     margin:50px auto;
+
+}
+#featuresAfterexpand{
+    height: 1920px;
 }
 
 .options{
@@ -608,20 +631,37 @@ a:hover {
     margin-bottom:50px;
     width:100%;
     div{
-        width:20%;
+        width:30%;
         background-color:black;
         color:$WColor;
-        height: 30px;
+        height: 40px;
         text-align: center;
-        padding-top:5px;
+        padding-top:10px;
         margin:0 auto;
+        font-family: sans-serif;
+        font-size:20px;
+        border-radius:10px;
     }
+
+}
+/*********
+UseCase Section
+************/
+.useCase{
+    height: 300px;
+    padding:2px;
+    margin-top:50px;
+    
 }
 
+.usecase-wrapper{
+    margin:0 auto;
+    width:85%
+}
 .faceBook,.instagram,.twitter{
     img{
-        width:80%;
-        margin-left: 30px;
+         //width:70%;
+        margin-left: 20%;
         border:2px solid gray;
         border-radius:20px;
 
@@ -629,7 +669,35 @@ a:hover {
     float:left;
     width:33.3%;
     
+    a{
+        padding:5px;
+    }
 }
+.twitter :nth-child(2), .instagram :nth-child(2), .faceBook :nth-child(2){
+    display:none;
+}
+
+#twitterUseCase,#faceBookUseCase,#instagramUseCase{
+     height: 625px;
+     width:84%;
+     margin-left:30px;
+}
+#twitterClick, #instagramClick, #faceBookClick{
+    img{
+        height: 120px;
+        width:120px;
+        //padding:20px;
+        margin-left:33%;
+    
+    }
+}
+
+
+
+
+/*******************
+Legal Page
+*********************/
 .legal{
     position:relative;    
     top:100px;
@@ -702,16 +770,17 @@ a:hover {
         list-style-type: upper-alpha;
       }
     }
+    p{
+    text-align:left;
+    margin-left:20px;
+}
  
 }
 
 .color{
      background:#ccddff;
 }
-p{
-    text-align:left;
-    margin-left:20px;
-}
+
 
 .legalButtons{
         margin:0 auto;
@@ -760,9 +829,8 @@ p{
 
     }
 }
-.twitter img, .instagram img, .faceBook img{
-    height: 625px;
-}
+
+
 /************************
 SignUp Page Styles
 ************************/
@@ -792,4 +860,44 @@ SignUp Page Styles
 .SignUpPage{
     background-color: $WColor;
     color:black;
+}
+
+#submitSignupPage{
+    display:none;
+}
+/*************
+About Us Page
+*************/
+
+.aboutCompany{
+    height: 700px;
+    background-image:url("http://www.snoron.com/walls/city_view_at_night-wide.jpg");
+    background-size:cover;
+    //background-position:top 50px;
+    h1{
+        position:relative;
+        top:50%;
+        left:380px;
+        width:70%;
+        color:white;
+        font-size: 5em;
+        font-family: sans-serif;
+    }
+}
+.aboutUsWrapper{
+    height: 700px;
+    opacity:0.9;
+}
+.aboutUsNote{
+    width:70%;
+    font-size:20px;
+    background:black;
+    color:$WColor;
+    position:relative; 
+    font-family: sans-serif;
+    line-height: 1.4;
+    position:relative;
+    bottom:100px;
+    left:200px;
+    padding:5%;
 }
