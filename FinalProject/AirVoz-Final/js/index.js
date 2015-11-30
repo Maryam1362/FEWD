@@ -97,44 +97,13 @@ $(document).ready(function(){
    test[1] =$("#email").val();
    test[2] =$("#passWord").val();
    test[3] =$("#userName").val();
-   test[4] =$("#datepicker").val();*/
-  
-   $("#email, #userName, #passWord, #datepicker").on("change",function(){
-      console.log("test this");
-      
-      if($("#passWord").val()!=="" &&
-         $("#userName").val()!=="" && $("#passWord").val()!=="" && $("#datepicker").val()!=="" ){
-
-       console.log("test value");
-
-      $("#submitSignupPage").css("display","inline-block");
-     
-
-      }
-      if(test.indexOf('@') === -1){
-                                
-         alert("not a valid email, please eneter a valid email");
-               }  
-        if(test2.indexOf('@') === -1 || 
-          test2.indexOf('#') === -1 || 
-          test2.indexOf('$') === -1 || 
-          test2.indexOf('%') === -1 ||
-          test2.indexOf('^') === -1 ||
-          test2.indexOf('&') === -1 ||
-          test2.indexOf('*') === -1 ||
-          test2.indexOf('(') === -1 ||
-          test2.indexOf(')') === -1 )
-                                   {
-         console.log(test);                           
-         alert("please include special characters in your passcode");
-               }               
-   });
+   test[4] =$("#datepicker").val();*/  
 
 $("#twitterClick").click(function(event){
     event.preventDefault();
     console.log("mytest");
     test[0]=1;
-    $('.useCase').css('height','800px');
+    $('.useCase').css('height','730px');
     $("#twitterClick").css("display","none");
     $("#twitterSecondClick").css("display","block");
    
@@ -154,7 +123,7 @@ $("#twitterSecondClick").click(function(event){
 $("#instagramClick").click(function(event){
     event.preventDefault();
     test[1]=1;
-    $('.useCase').css('height','800px');
+    $('.useCase').css('height','730px');
     $("#instagramClick").css("display","none");
     $("#instagramSecondClick").css("display","block");
   
@@ -173,7 +142,7 @@ $("#faceBookClick").click(function(event){
     event.preventDefault();
     console.log("mytest");
     test[2]=1;
-    $('.useCase').css('height','800px');
+    $('.useCase').css('height','730px');
     console.log("test[2] : " + test[2]);
     $("#faceBookClick").css("display","none");
     $("#faceBookSecondClick").css("display","block");
@@ -192,12 +161,98 @@ $("#faceBookSecondClick").click(function(event){
 });
 
 
- 
-  
-  
-   
 });
 
+  $("#email, #userName, #passWord, #datepicker, #confirmPassWord").on("change",function(){
+      console.log("test this");
+      
+      if($("#passWord").val()!=="" &&
+         $("#userName").val()!=="" && 
+         $("#passWord").val()!=="" && 
+         $("#datepicker").val()!=="" && 
+         $("#confirmPassWord").val()!==""){
+ 
+              $("#submitSignupPage").css("display","inline-block");
+      }
+           
+   });
 
+$("#validationForm").submit(function(event){
+ 
+  var errorMessage="";
+  console.log(errorMessage);
+function isValidEmailAddress(emailAddress) {
+    var pattern = new RegExp(/^((([a-z]|\d|[!#\$%&'\*\+\-\/=\?\^_`{\|}~]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])+(\.([a-z]|\d|[!#\$%&'\*\+\-\/=\?\^_`{\|}~]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])+)*)|((\x22)((((\x20|\x09)*(\x0d\x0a))?(\x20|\x09)+)?(([\x01-\x08\x0b\x0c\x0e-\x1f\x7f]|\x21|[\x23-\x5b]|[\x5d-\x7e]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(\\([\x01-\x09\x0b\x0c\x0d-\x7f]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]))))*(((\x20|\x09)*(\x0d\x0a))?(\x20|\x09)+)?(\x22)))@((([a-z]|\d|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(([a-z]|\d|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])([a-z]|\d|-|\.|_|~|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])*([a-z]|\d|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])))\.)+(([a-z]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(([a-z]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])([a-z]|\d|-|\.|_|~|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])*([a-z]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])))\.?$/i);
+    return pattern.test(emailAddress);
+};
+if(!isValidEmailAddress($("#email").val())){
+  errorMessage="</br>Please enter a valid email address";
+  console.log(errorMessage);
+}
+
+if ($("#passWord").val().length<8){
+
+   errorMessage=errorMessage+"<br/>your password should have at least 8 characters ";
+
+}
+if ( $("#passWord").val().indexOf("!")===-1&&
+  $("#passWord").val().indexOf('"')===-1&&
+  $("#passWord").val().indexOf('#')===-1&&
+  $("#passWord").val().indexOf('$') ===-1&&
+  $("#passWord").val().indexOf('%')===-1&&
+  $("#passWord").val().indexOf('&')===-1&&
+  $("#passWord").val().indexOf('&')===-1&&
+  $("#passWord").val().indexOf("'")===-1&&
+  $("#passWord").val().indexOf('(')===-1&&
+  $("#passWord").val().indexOf(')')===-1&&
+  $("#passWord").val().indexOf('*')===-1&&
+  $("#passWord").val().indexOf('+')===-1&&  
+  $("#passWord").val().indexOf(',')===-1&&
+  $("#passWord").val().indexOf('-')===-1&&
+  $("#passWord").val().indexOf('.')===-1&&
+  $("#passWord").val().indexOf('/')===-1&&
+  $("#passWord").val().indexOf(':')===-1&&
+  $("#passWord").val().indexOf(';')===-1&&
+  $("#passWord").val().indexOf('<')===-1&&
+  $("#passWord").val().indexOf('=')===-1&&
+  $("#passWord").val().indexOf('=')===-1&&
+  $("#passWord").val().indexOf('>')===-1&&
+  $("#passWord").val().indexOf('?')===-1&&
+  $("#passWord").val().indexOf('@')===-1&&
+  $("#passWord").val().indexOf('[')===-1&&
+  $("#passWord").val().indexOf('\\')===-1 &&
+  $("#passWord").val().indexOf(']') ===-1 &&
+  $("#passWord").val().indexOf('^')===-1&&
+  $("#passWord").val().indexOf('_')===-1&&
+  $("#passWord").val().indexOf('~')===-1&&
+  $("#passWord").val().indexOf('`')===-1&& 
+  $("#passWord").val().indexOf('{')===-1&&
+  $("#passWord").val().indexOf('|')===-1&&
+  $("#passWord").val().indexOf('}')===-1&& 
+  $("#passWord").val().indexOf('$')===-1 &&
+  $("#passWord").val().indexOf(')')===-1 &&
+  $("#passWord").val().indexOf('{')===-1 &&
+  $("#passWord").val().indexOf('}')===-1 &&
+  $("#passWord").val().indexOf(';')===-1){
+errorMessage=errorMessage+"<br/>please include a sepecial character in your passowrd";
+    console.log(errorMessage);
+  }
+  
+if($("#passWord").val() !== $("#confirmPassWord").val()){
+    errorMessage=errorMessage+"<br/>please enter matching password";
+    console.log(errorMessage);
+}
+if(errorMessage===""){
+    alert("form has been submitted correctly");
+    //onsubmit="setTimeout(function () { window.location.reload(); }, 10)";
+    //window.location.reload();
+}
+else{
+
+    $("#error").html(errorMessage);
+     event.preventDefault();
+
+}
+});
 
   

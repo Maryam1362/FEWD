@@ -1,0 +1,112 @@
+/*
+Project Name: Blank Template
+Client: Your Client
+Author: Your Name
+Developer @GA in NYC
+*/
+
+
+/******************************************
+/* SETUP
+/*******************************************/
+
+/* Box Model Hack */
+* {
+  -moz-box-sizing: border-box; /* Firexfox */
+  -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+  box-sizing: border-box; /* IE */
+}
+
+/* Clear fix hack */
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+.clear {
+  clear: both;
+}
+
+.alignright {
+  float: right;
+  padding: 0 0 10px 10px; /* note the padding around a right floated image */
+}
+
+.alignleft {
+  float: left;
+  padding: 0 10px 10px 0; /* note the padding around a left floated image */
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+  background: url(images/background.png);
+
+}
+a {
+ 
+}
+
+.container{
+  width:75%;
+  margin:0 auto;
+  background-color:rgba(255,255,255,0.55);
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+/* Center the container */
+/*.container {
+  width: 960px;
+  margin: 0 auto;
+}*/
+h1{
+  font-size:23px;
+}
+
+header {
+ background:grey;
+ text-align: center;
+ height: 70px;
+ font-size:30px;
+ padding-top:10px;
+}
+.name, .address{
+  border-style: none;
+}
+.name legend, .address legend{
+  float:left;
+
+}
+
+
+input[name=lastName]{
+  margin-left:20px;
+}
+input[name=firstName]{
+  margin-left:50px;
+}
+.conatctInfo {
+  width:45%;
+}
+/*input[name=phone]{
+  width:20%;
+}*/
+input[name=streetAddress]{
+  width:90%;
+}
+
+
+
+  
+
+
+

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>AirVoz</title>
+	<meta charset="utf-8">
+    <meta name="description" content="The perfect personal assistant. Relaxr does your job for you so you can enjoy life as it is meant to be.">
+	<!-- external CSS link -->
+	<link rel="stylesheet" href="Sass/reset.css">
+	<link rel="stylesheet" href="style/style.css">
+	 
+
+</head>
+<body>
+    <div class="container">
+    <h1>
+       Course Application
+    </h1>
+ 
+	<form class="CourseApplicationForm" id="validationForm" method="post" action="result.php">
+	 <h1>Your Contact Info</h1>
+	  <div class="conatctInfo">
+	  <fieldset class="name">
+	  		<legend> Your Name</legend>
+	  		<!--<label for="firstName">Your Name</label>-->
+	  		<input type="text" name="firstName" id="firstName" placeholder="First">
+	  		<input type="text" name="lastName" placeholder="last">
+	  </fieldset>
+	  <feildset>
+	  <legend>Phone Number</legend>
+	  	<input type="text" maxlength="3" name="phone" placeholder="" value="" id="phoneNumber" />
+	  	&mdash;
+	  	<input  maxlength="3" size="3" type="text" name="phone" placeholder="" value="" id="phoneNumber"/>
+	  	&mdash;
+	  	<input maxlength="3" size="3"  type="text" name="phone" placeholder="" value="" id="phoneNumber"/>		
+       </input>
+        </feildset>
+       <fieldset class="address">
+       <legend> Address</legend>
+        <input type="text" placeholder="street Address" name="streetAddress">
+        <input type="text" placeholder="Address Line 2">
+        <input name ="city" type="text" placeholder="City">
+       	<input name ="state" type="text" placeholder="City">
+       	<input name ="postalcode" type="text" placeholder="City">
+       </fieldset>
+       <h2>Skills &amp; Interests</h2>
+       <label for="course">Course</label>
+       <select name="course">
+        	<option value="SelectOne"> Select One</option>
+        	<optgroup></optgroup>
+       </select>
+       <button value="save">Save Draft</button>
+       <input type="submit" value="submit">
+	  	</div>
+
+
+</body>
+</html>
+
+
+
+
+

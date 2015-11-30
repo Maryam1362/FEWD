@@ -21,22 +21,31 @@
 	  	
 	  	</header>
 	  </div>
-	  <div class="boxes">
+
+	  
+      <div id="error"></div>
+	  <form class="boxes" id="validationForm" method="POST" action="" target="">
 	    
 	  		<label>Username</label>
 	  	<input type="Username" name="userName" placeholder="Username" value="" id="userName"/>	
 	  	</input>
 	  	<label>PASSWORD</label>
 	  	<input type="password" name="password" required="required" placeholder="Password" value="" id="passWord"/>	
+
+	  	</input>
+	  	<label>CONFIRM PASSWORD</label>
+	  	<input type="password" name="password" required="required" placeholder=" Confirm Password" value="" id="confirmPassWord"/>	
 	  	</input>	
+
 	    <label>EMAIL</label>
 	  	<input type="email" name="email" placeholder="Email Address" value="" id="email">
 	  	</input>
 	  	
-	  	<label>Date Of Birth</label> <input type="text" id="datepicker"></input>
+	  	<label>Date Of Birth</label> 
+	  	<input type="text" id="datepicker"></input>
 	     
 	    <button id="submitSignupPage"> Submit</button>
-    </div>
+	    </form>
 
 	 	
   <script src="js/jquery.js"></script>
