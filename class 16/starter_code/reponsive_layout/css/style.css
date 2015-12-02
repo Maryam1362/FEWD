@@ -72,11 +72,16 @@ nav li{
   background: #FC6837;
   height: 25px;
   list-style:none;
-  margin-right:10px;
+  /*margin-right:10px;*/
   padding:20px;
 }
 footer {
 
+}
+.box{
+  background-color: blue;
+  margin-left:10px;
+  height: 60px;
 }
 
 /******************************************

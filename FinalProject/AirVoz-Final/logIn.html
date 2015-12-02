@@ -4,7 +4,7 @@
 <head>
 	<title>AirVoz</title>
 	<meta charset="utf-8">
-    <meta name="description" content="The perfect personal assistant. Relaxr does your job for you so you can enjoy life as it is meant to be.">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
 	<link href='https://fonts.googleapis.com/css?family=Lobster|Bangers' rel='stylesheet' type='text/css'>
 	<!-- external CSS link -->
 	<link rel="stylesheet" href="Sass/reset.css">
@@ -20,30 +20,30 @@
 	  	</header>
 	  </div>
 	  <form class="boxes" id="" method="POST" action="" target="">
-	    <label>EMAIL</label>
+	    <label for="email">EMAIL</label>
 	  	<input type="email" name="email" placeholder="Email Address" value="" id="email">
 	  	</input>
-	  	<label>PASSWORD</label>
+	  	<label for="password">PASSWORD</label>
 	  	<input type="password" name="password" placeholder="Password" value="" id="passWord">	
 	  	</input>	
-	<div class="checkBox">	
+	<div>	
 	  		
-		<input type="checkbox" id="checkbox-rememberme" class="hidden" checked=""></input> <label>Remember Me</label> 		
-	</div>
-	<div class="forgetPass">
+		<input type="checkbox" id="checkbox-rememberme" checked=""><label class="checkBox">Remember Me</label> </input>	
 
-	<button>
-	<a href=""> SIGN IN</a>
-	</button>
-	<a class="SignIn" href=""> Forget Password</a>
+		<input type="submit" value="SIGN IN" > </input>
 	</div>
-	</form>
-	<div class="newAccount boxes">
+	<a class="SignIn" href=""> Forget Password</a>
+	
+	<div class="newAccount">
     <p> Don't have an account? </p> 
     <a href="SignUp.html"> Sing Up</a>
-    </p>
     </div>	
+    </form>
 	
-
+<script type="text/javascript" src="js/jquery.js"></script>
+<script src="js/owlCarouselPlugin/owl.carousel.js"></script>
+<script type="text/javascript" src="js/fancyBoxPlugin/jquery.fancybox.pack.js"></script>
+<script src="js/calendarPlugin/jquery-ui.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
 </body>
 </html>

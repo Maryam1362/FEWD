@@ -1,0 +1,19 @@
+.mainHeader{
+	 	background: #3F739E;
+	   	padding: 0.8%;
+	    color: $WColor;
+	    position: fixed;
+	    width:100%;
+	    z-index: 1;
+	    opacity:0.9;
+	
+}
+.mainHeader h1{
+
+        font-family: $font;
+        font-size: 50px;
+        text-align: center;
+        width: 33.3%;
+        float: left;
+
+}
